@@ -1,0 +1,127 @@
+#Contact{
+    color: var(--subtitle);
+    border-bottom: 1px solid var(--border);
+}
+#Contact .icon-envelope{
+    font-size: 1.8rem ;
+    margin-right: .4rem;
+    color: var(--subtitle);
+}
+#Contact h2 , input[type="submit"]{
+    color: var(--title);
+}
+#Contact h2{
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+#Contact p{
+    line-height: 1.5rem;
+}
+input,textarea,.btn-submit{
+    all: unset;
+    background-color: rgba(255,255,255,.05);
+    border: 1px solid var(--border) ;
+    margin-left: 15px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: var(--title);
+    transition: .5s;
+}
+.light input,.light textarea ,.light .btn-submit{
+    background-color: rgba(255,255,255,.162);
+    border: 1px solid rgba(128,128,128,.45);
+    box-shadow: 1px 1px 1px rgba(73,73,73,.105);
+}
+input[type="email"],textarea{
+    width: 300px;
+}
+input:focus,textarea:focus,input:hover,textarea:hover{
+    border: 1px solid rgb(45 , 212 , 191);
+}
+.light input:focus,.light textarea:focus,.light input:hover,.light textarea:hover{
+    border: 1px solid rgb(58, 59, 59);
+}
+button[type="submit"]{
+    background-color: rgb(36, 37, 46);
+    margin-left: 0;
+    padding: .35rem 1.7rem;
+    margin-top: 25px;
+    border: 1px solid rgb(63, 63, 70);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.light button[type="submit"]{
+    background-color:  rgb(36, 37, 46);
+}
+button[type="submit"]:hover{
+    scale: .99;
+    border: 1px solid #fff;
+}
+.message{
+    display: flex;
+    align-items: center;
+}
+textarea{
+    /* بتخلي الكلام لما يخلص السطر ينزل لوحده ع السطر البعده */
+    overflow-wrap:break-word ;
+}
+.contact-img-animation{
+    display: flex;
+    justify-content: space-between !important;
+}
+@media(max-width:967px){
+    .container{
+        width: 90% !important;
+    }
+    .form{
+        text-align: center;
+    }
+    .succuss , .success span{
+        text-align: start;
+    }
+    label{
+        margin-bottom: .75rem;
+    }
+    .message,.email{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        text-align: start;
+    }
+    input[type="email"],textarea{
+        margin-left: 0;
+        width: 80%;
+    }
+    button[type="submit"]{
+        margin-top: 2.25rem;
+        padding: .35rem 2.5rem;
+    }
+    .contact-img-animation{
+        margin-top: 1.5rem;
+        align-items: center;
+    }
+    .contact-img-animation .contactUs{
+        height: 400px;
+    }
+}
+@media(max-width:567px){
+    form{
+        order: 2;
+    }
+    .contact-img-animation{
+        order: 1;
+    }
+    input[type="email"],textarea{
+        margin-left: 0;
+        width: 100%;
+    }
+    .success span{
+        margin-top: 10px;
+    }
+    .done{
+        height: 45px !important;
+    }
+}
+

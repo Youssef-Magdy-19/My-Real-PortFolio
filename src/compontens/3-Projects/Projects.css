@@ -1,0 +1,132 @@
+.projects{
+    justify-content: space-between !important;
+}
+.space{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.project{
+    box-shadow: -1px 1px 1px rgba(0,0,0,.16) , 1px 1px 1px rgba(0,0,0,.16);
+    background-image: linear-gradient(
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.05)
+    );
+    color: var(--title);
+    border: 1px solid rgba(93,188,252,.3);
+    margin: auto;
+    transition: .5s;
+    border-radius: 7.5px !important;
+}
+.light .project , .light .project:hover{
+    border: none;
+}
+.project:hover{
+    border: 1px solid var(--blue);
+    transform: rotate(1deg);
+    scale: 1.01;
+}
+.light .project:hover{
+    border: none;
+    background-color: rgb(246,246,246);
+}
+.project img{
+    border-radius: 5px 5px 0 0;
+}
+.project p{
+    color: var(--subtitle);
+}
+.project-info{
+    padding: .3rem;
+}
+.filter-buttons{
+    flex-direction: column !important;
+    justify-content: start ;
+    padding-left: .6rem !important;
+}
+.filter-buttons button{
+    background-color: rgb(36, 37, 46);
+    color: #fff;
+    border: 1px solid var(--border);
+    margin-bottom: .5rem;
+    padding: .2rem; 
+    border-radius: 2.5px;
+    opacity: .5;
+    transition: .25s ;
+    /* width: 110%; */
+    /* text-align: center; */
+}
+.filter-buttons button.active {
+    border: 1px solid var(--blue);
+    color: #fff;
+    scale: 1.025;
+    opacity: 1;
+}
+.light .filter-buttons button.active{
+    border: 1px solid #000;
+}
+.filter-buttons button:hover{
+    opacity: 1;
+}
+.icon-proj a{
+    color: var(--subtitle);
+    margin-left: 5px;
+    font-size: 1.25rem;
+    transition: .25s ;
+}
+.icon-proj a:hover{
+    color: var(--title);
+}
+@media(max-width:980px){
+    .filter-buttons{
+        padding-left: 0 !important;
+    }
+    .filter-buttons button{
+        width: 130%;
+        font-size: 1rem;
+    }
+}
+@media(max-width:580px){
+    #Projects{
+        padding-top: 70px !important;
+    }
+    .projects{
+        justify-content: center !important;
+    }
+    .filter-buttons{
+        flex-direction: row !important;
+        /* خد بالك هي البتخلي العناصر تنزل لما العرض يخلص */
+        flex-wrap: wrap;
+        column-gap: 13px;
+        justify-content: center ;
+    }
+    .filter-buttons button{
+        width: 9rem;
+        padding: .2rem 0;
+    }
+}
+@media(max-width:430px){
+    .filter-buttons{
+        width: 100% !important;
+    }
+    .filter-buttons button{
+        width: 6.6rem;
+        padding: .2rem 0;
+        font-size: .95rem;
+    }
+}
+@media(max-width:361px){
+    .filter-buttons button{
+        width: 6.4rem;
+        padding: .2rem 0;
+        font-size: .9rem;
+    }
+}
+@media(max-width:345px){
+    .filter-buttons button{
+        width: 6rem;
+        padding: .2rem 0;
+        font-size: .82rem;
+    }
+}

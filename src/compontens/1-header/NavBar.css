@@ -1,0 +1,151 @@
+
+/* **********************************
+    table of Contents   
+*************************************
+
+1- Header Desgin
+2-Button & icon
+3- List || model
+
+*/
+
+
+/* *******************************  header desgin ****************************** */
+.header{
+    height: 65px;
+    position: fixed;
+    z-index: 10000;
+    justify-content: space-around !important;
+    align-items: center !important;
+    width: 93%;
+    background-color: var(--secondary);
+    margin: auto !important;
+}
+.navbar{
+    background-color: var(--bgHeader);
+    border-radius: 50px;
+    box-shadow: 1px 1px 40px rgba(70, 70, 70, 0.336);
+}
+.navbar ul , .list ul{
+    list-style: none;
+    align-items: center !important;
+}
+.navbar ul li a , .list ul li a{
+    color: var(--title);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.navbar ul li a:hover , .list ul li a:hover{
+    color: var(--blue);
+}
+/**************************   button & icon    **********************      */
+.button-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border) ;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: var(--bgHeader);
+    color: var(--subtitle);
+    transition: all .3s ease-in-out;
+}
+.button-icon:hover{
+    border: 1px solid rgba(255, 166, 0, 0.315);
+}
+.button-icon svg , .button-icon .icon-sun{
+    transition: .3s;
+}
+.button-icon:hover svg{
+    color: var(--title);
+}
+.button-icon:hover .icon-sun{
+    color: darkgoldenrod;
+}
+.navbar-toggle{
+    display: none;
+}
+/*  *********************list ****************************      */
+.fixed{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(40, 40, 48, 0.91);
+    z-index: 100;
+    padding-top: 20px;
+    /* filter: blur(8px);  ** بيخلي كل المحتوي ضبابي حتي الكلام ** خاص بالكلام */
+    /* **اما هنا بيخلي العنصر هو الضبابي من غير المحتوي **جاص بالخلفيه */
+    backdrop-filter: blur(8px); 
+}
+.list{
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    scale: 1;
+    transition: .8s ease-in-out;
+    width: 75%;
+    margin: auto;
+    padding: 1rem 2rem!important;
+    animation: icon .5s 1;
+}
+@keyframes icon{
+    0% {scale: 0;}
+    60% {scale: 1.2;}
+    100%{scale: 1;}
+}
+.list ul li{
+    padding-bottom: .66rem;
+    padding-top: .4rem;
+    border-bottom: 1px solid var(--border);
+}
+.list ul li:nth-child(4){
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.list ul:first-child{
+    margin-top: 0px !important;
+}
+.list div{
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+.list button {
+    background-color: transparent;
+    border: none;
+}
+.list div button .close-icon{
+    color: var(--title);
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+.list div button .close-icon:hover{
+    color: crimson;
+    transform: rotate(180deg);
+    font-size: 1.7rem;
+}
+@media(max-width:967px){
+    .header{
+        width: 88%;
+    }
+}
+@media(max-width:767px){
+    .header{
+        width: 88%;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-toggle{
+        display: block;
+    }
+}
+@media(max-width:567px){
+    .list{
+        width: 85%;
+        margin-top: 40px;
+    }
+    .header{
+        width: 86% !important;
+    }
+}
