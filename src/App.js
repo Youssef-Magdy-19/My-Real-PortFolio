@@ -3,9 +3,10 @@ import { useEffect } from 'react';
 import './App.css';
 import NavBar from './compontens/1-header/NavBar';
 import Hero from './compontens/2-hero/Hero';
-import Projects from './compontens/3-Projects/Projects';
-import Contact from './compontens/4-contact/Contact';
-import Footer from './compontens/5-footer/Footer';
+import Skills from './compontens/3-Skills/Skills';
+import Projects from './compontens/4-Projects/Projects';
+import Contact from './compontens/5-contact/Contact';
+import Footer from './compontens/6-footer/Footer';
 function App() {
   const scroll=()=>{
     let scroll2up = document.querySelector(".scroll2up")
@@ -23,6 +24,7 @@ function App() {
     <div className='container'>
       <NavBar/>
       <Hero />
+      <Skills/>
       <Projects />
       <Contact />
       <Footer/>

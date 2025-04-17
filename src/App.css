@@ -89,3 +89,6 @@ button:disabled{
 .scroll2up:hover{
   background-color: rgb(25, 118, 210);
 }
+h1,h2,h3,h4,h5,h6,p,a,button{
+  transition: .3s;
+}

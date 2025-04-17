@@ -29,7 +29,8 @@
 }
 .icons-Hero ul{
     list-style: none;
-    margin-left: -30px ;
+    margin-left: -13px ;
+    
 }
 .icons-Hero ul li{
     margin-right: 15px;
@@ -50,6 +51,31 @@
 }
 .animation .developer{
     translate: 60px 20px;
+}
+.download-cv{
+    text-decoration: none;
+    color: var(--subtitle);
+    background-color:var(--bgHeader);
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    transition: .3s;
+}
+.download-cv:hover{
+    background-color:var(--bgHeader);
+    border: 1px solid #fff;
+    color: var(--title);
+}
+.light .download-cv:hover{
+    background-color:var(--bgHeader);
+    border: 1px solid #3333;
+    color: var(--title);
+}
+.light .icons-Hero ul li{
+    border: 1px solid gray;
+}
+.light .icons-Hero ul li:hover , .light .download-cv:hover{
+   border: 1px solid black;
 }
 @media(max-width:1067px){
     .my-info h1{

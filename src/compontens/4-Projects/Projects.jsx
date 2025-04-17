@@ -13,7 +13,7 @@ const Products =()=>{
     }
     return(
       <section id="Projects">
-        <div className="container">
+        <div className="container-projects">
           <div className="projects row justify-content-between">
             <div className="filter-buttons d-flex col-md-2 col-sm-3 col-11 mb-3 p-0 m-0">
               <button  className={active === "All Projects" ? "active " : ""}  onClick={()=>{

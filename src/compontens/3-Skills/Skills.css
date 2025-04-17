@@ -1,0 +1,54 @@
+#Skills{
+    border-bottom: 1px solid var(--border);
+}
+.container-skills{
+    width: 97.5%;
+    /* margin: 0 !important; */
+    margin: auto ;
+}
+h2{
+    color: var(--title);
+}
+.skill{
+    width: 80%;
+    margin: auto;
+}
+.image-skill{
+    border-radius: 5px !important;
+    background-color:rgb(36, 37, 46);
+    width:  50px !important;
+    height: 50px !important;
+    margin-right: 5px;
+    border: 1px solid rgba(93,188,252,.3);
+    transition: .3s;
+}
+.light .image-skill{
+    background-color: rgb(246,246,246) ;
+    border: 1px solid gray;
+}
+.info-skill h5{
+    color: var(--title);
+    transition: .3s;
+}
+@media(max-width:567px){
+    .container-skills{
+        width: 95%;
+        /* margin: 0 !important; */
+        margin: auto ;
+    }
+    .space{
+        margin: 0 !important;
+        padding: 5px !important;
+        
+    }
+    .skill{
+        width: 100% !important;
+        border: 1px solid rgba(93,188,252,.3) !important;
+    }
+    .info-skill{
+        padding-top: 7px;
+    }
+    .info-skill p, .info-skill h5{
+        font-size: 14px;
+    }
+}

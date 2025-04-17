@@ -1,13 +1,24 @@
 import image1 from "../images/project1.io.png"
 import image2 from "../images/project2.io.png"
 import image3 from "../images/project3.io.png"
-
 import image5 from "../images/project4.png"
 import image6 from "../images/about.png"
 import image7 from "../images/project5.io.png"
 import image8 from "../images/Portfolio.io.png"
 import image9 from "../images/Ecommerce1.io.png"
 import image10 from "../images/Ecommerce2.io.png"
+import css from "../images/Css3-removebg-preview.png"
+import Bootstrap from "../images/Bootstrap-removebg-preview.png"
+import HTML from "../images/Html-removebg-preview.png"
+import JavaScript from "../images/JavaScript.png"
+import React from "../images/React.png"
+import ReactRouter from "../images/React-Router.png"
+import Redux from "../images/Redux.png"
+import NodeJs from "../images/Node_js-removebg-preview.png"
+import ExpressJS from "../images/Express.png"
+import MongoDB from "../images/MongoDB.png"
+import Git from "../images/Git-removebg-preview .png"
+import GitHub from "../images/GitHub.png"
 
 export const Projects =[
     {
@@ -37,15 +48,6 @@ export const Projects =[
         category:"HTML5&CSS3",
         linkCode:"https://github.com/Youssef-Magdy-19/ostora-coffee"
     },
-    // {
-    //     id:4,
-    //     title:"",
-    //     img:"",
-    //     desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ",
-    //     link:"",
-    //     category:"HTM5&CSS3",
-    //     linkCode:""
-    // },
     {
         id:5,
         title:"Coffee Shop",
@@ -99,5 +101,69 @@ export const Projects =[
         link:"https://youssef-magdy-19.github.io/Ecommerce-Ostora-shop/",
         category:"ReactJS",
         linkCode:"https://github.com/Youssef-Magdy-19/Ecommerce-Ostora-shop"
+    },
+]
+
+export const ContantSkills = [
+    {
+        name:"HTML",
+        imgUrl : HTML,
+        category: "User Interface" 
+    },
+    {
+        name:"CSS",
+        imgUrl : css,
+        category: "User Interface"  
+    },
+    {
+        name:"Bootstrap",
+        imgUrl : Bootstrap,
+        category: "Libraries" 
+    },
+    {
+        name:"JavaScript",
+        imgUrl : JavaScript,
+        category: "Interaction" 
+    },
+    {
+        name:"React",
+        imgUrl : React,
+        category: "FrameWork"  
+    },
+    {
+        name:"React Router",
+        imgUrl : ReactRouter,
+        category: "Libraries"  
+    },
+    {
+        name:"Redux JS",
+        imgUrl : Redux,
+        category: "Libraries" 
+    },
+    {
+        name:"Git",
+        imgUrl : Git,
+        category: "Tool" 
+    },
+
+    {
+        name:"GitHub",
+        imgUrl : GitHub,
+        category: "Tool" 
+    },
+    {
+        name:"Node JS",
+        imgUrl : NodeJs,
+        category: "Web Server" 
+    },
+    {
+        name:"Express JS",
+        imgUrl : ExpressJS,
+        category: "Framework" 
+    },
+    {
+        name:"MongoDB",
+        imgUrl : MongoDB,
+        category: "Database" 
     },
 ]

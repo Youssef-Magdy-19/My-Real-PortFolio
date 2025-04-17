@@ -35,6 +35,9 @@
     font-size: 1rem;
     font-weight: 500;
 }
+.navbar ul li a.active-links , .list ul li a.active-links{
+    color: var(--blue);
+}
 .navbar ul li a:hover , .list ul li a:hover{
     color: var(--blue);
 }

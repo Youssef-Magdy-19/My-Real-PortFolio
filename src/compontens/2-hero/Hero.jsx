@@ -52,11 +52,14 @@ const Hero = () => {
             </div>
             <h1>{"Hi! I'm Youssef Magdy Mohmmed,"} <span>{text}</span></h1>
             <p>Hello Everyone. I'm Youssef Magdy , I'm a Software Engeneering , Front End Developer and Web Developer . I have 8 months of Experience in Web Develpoment .</p>
-            <div className="icons-Hero">
+            <div className="icons-Hero d-flex">
+                <div>
+                  <a className="download-cv" href="/Youssef_Magdy_CV.pdf" download="Youssef_Magdy_CV.pdf">DownLoad CV</a>
+                </div>
                 <ul className=" d-flex">
-                  <li><a href="https://www.linkedin.com/in/ana-youssef-48141b337/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
-                  <li><a href="https://github.com/Youssef-Magdy-19"><FontAwesomeIcon icon={faGithub}/></a></li>
-                  <li><a href="https://www.facebook.com/profile.php?id=100053406365909&locale=ar_AR"><FontAwesomeIcon icon={faFacebook}/></a></li>
+                  <li><a href="https://www.linkedin.com/in/ana-youssef-48141b337/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                  <li><a href="https://github.com/Youssef-Magdy-19" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=100053406365909&locale=ar_AR" target="_blank"><FontAwesomeIcon icon={faFacebook}/></a></li>
                 </ul>
             </div>
           </div>

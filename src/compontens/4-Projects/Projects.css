@@ -1,5 +1,10 @@
+
 .projects{
     justify-content: space-between !important;
+}
+.container-projects{
+    width: 97.5%;
+    margin: auto;
 }
 .space{
     background-color: transparent;
@@ -79,11 +84,14 @@
     color: var(--title);
 }
 @media(max-width:980px){
+    .container-projects{
+        width: 95% !important;
+    }
     .filter-buttons{
         padding-left: 0 !important;
     }
     .filter-buttons button{
-        width: 130%;
+        width: 115%;
         font-size: 1rem;
     }
 }
