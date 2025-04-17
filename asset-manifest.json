@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Real-PortFolio/static/css/main.59b12137.css",
-    "main.js": "/My-Real-PortFolio/static/js/main.805da01e.js",
+    "main.css": "/My-Real-PortFolio/static/css/main.663da2c2.css",
+    "main.js": "/My-Real-PortFolio/static/js/main.accda6f9.js",
     "static/js/453.acca0757.chunk.js": "/My-Real-PortFolio/static/js/453.acca0757.chunk.js",
     "static/media/project4.png": "/My-Real-PortFolio/static/media/project4.efe891aa63b02187b365.png",
     "static/media/Ecommerce1.io.png": "/My-Real-PortFolio/static/media/Ecommerce1.io.000301511f45ef096d26.png",
@@ -16,17 +16,29 @@
     "static/media/fontawesome-webfont.eot": "/My-Real-PortFolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/My-Real-PortFolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/cropped_image (1).png": "/My-Real-PortFolio/static/media/cropped_image (1).dc2b50fca3f01975b339.png",
+    "static/media/Express.png": "/My-Real-PortFolio/static/media/Express.96a6c747cf96da7f3adc.png",
+    "static/media/React.png": "/My-Real-PortFolio/static/media/React.2541af0c3fd4428e0756.png",
+    "static/media/MongoDB.png": "/My-Real-PortFolio/static/media/MongoDB.b0550737a502d4e3937c.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/My-Real-PortFolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/Ecommerce2.io.png": "/My-Real-PortFolio/static/media/Ecommerce2.io.61620db586aea816bb24.png",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/My-Real-PortFolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/Html-removebg-preview.png": "/My-Real-PortFolio/static/media/Html-removebg-preview.e99eef2129eb79678d1f.png",
+    "static/media/Bootstrap-removebg-preview.png": "/My-Real-PortFolio/static/media/Bootstrap-removebg-preview.80be7959b19fb13672a4.png",
+    "static/media/JavaScript.png": "/My-Real-PortFolio/static/media/JavaScript.e7bb78cb3637218a9bb5.png",
+    "static/media/Node_js-removebg-preview.png": "/My-Real-PortFolio/static/media/Node_js-removebg-preview.43324c698921b6dd44ae.png",
+    "static/media/Css3-removebg-preview.png": "/My-Real-PortFolio/static/media/Css3-removebg-preview.162791b141bdad8cb792.png",
+    "static/media/GitHub.png": "/My-Real-PortFolio/static/media/GitHub.417eec2653101056dc4b.png",
+    "static/media/Redux.png": "/My-Real-PortFolio/static/media/Redux.e79bc7161a46ecf40e8b.png",
+    "static/media/Git-removebg-preview .png": "/My-Real-PortFolio/static/media/Git-removebg-preview .37f0fae90b70876d5162.png",
+    "static/media/React-Router.png": "/My-Real-PortFolio/static/media/React-Router.5d1ff5237436cee23e3f.png",
     "index.html": "/My-Real-PortFolio/index.html",
     "static/media/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg": "/My-Real-PortFolio/static/media/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.9c0d4357cce6fdcd0779a678de44d634.svg",
-    "main.59b12137.css.map": "/My-Real-PortFolio/static/css/main.59b12137.css.map",
-    "main.805da01e.js.map": "/My-Real-PortFolio/static/js/main.805da01e.js.map",
+    "main.663da2c2.css.map": "/My-Real-PortFolio/static/css/main.663da2c2.css.map",
+    "main.accda6f9.js.map": "/My-Real-PortFolio/static/js/main.accda6f9.js.map",
     "453.acca0757.chunk.js.map": "/My-Real-PortFolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59b12137.css",
-    "static/js/main.805da01e.js"
+    "static/css/main.663da2c2.css",
+    "static/js/main.accda6f9.js"
   ]
 }
