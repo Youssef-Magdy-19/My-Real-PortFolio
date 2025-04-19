@@ -54,7 +54,7 @@ const Hero = () => {
             <p>Hello Everyone. I'm Youssef Magdy , I'm a Software Engeneering , Front End Developer and Web Developer . I have 8 months of Experience in Web Develpoment .</p>
             <div className="icons-Hero d-flex">
                 <div>
-                  <a className="download-cv" href="/Youssef_Magdy_CV.pdf" download="Youssef_Magdy_CV.pdf">DownLoad CV</a>
+                  <a className="download-cv" href="Youssef_Magdy_CV.pdf" download="Youssef_Magdy_CV.pdf">DownLoad CV</a>
                 </div>
                 <ul className=" d-flex">
                   <li><a href="https://www.linkedin.com/in/ana-youssef-48141b337/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a></li>
