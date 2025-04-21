@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-Real-PortFolio/static/css/main.663da2c2.css",
-    "main.js": "/My-Real-PortFolio/static/js/main.accda6f9.js",
+    "main.js": "/My-Real-PortFolio/static/js/main.a4a0d9c9.js",
     "static/js/453.acca0757.chunk.js": "/My-Real-PortFolio/static/js/453.acca0757.chunk.js",
     "static/media/project4.png": "/My-Real-PortFolio/static/media/project4.efe891aa63b02187b365.png",
     "static/media/Ecommerce1.io.png": "/My-Real-PortFolio/static/media/Ecommerce1.io.000301511f45ef096d26.png",
@@ -34,11 +34,11 @@
     "index.html": "/My-Real-PortFolio/index.html",
     "static/media/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.svg": "/My-Real-PortFolio/static/media/verified_24dp_4B77D1_FILL0_wght400_GRAD0_opsz24.9c0d4357cce6fdcd0779a678de44d634.svg",
     "main.663da2c2.css.map": "/My-Real-PortFolio/static/css/main.663da2c2.css.map",
-    "main.accda6f9.js.map": "/My-Real-PortFolio/static/js/main.accda6f9.js.map",
+    "main.a4a0d9c9.js.map": "/My-Real-PortFolio/static/js/main.a4a0d9c9.js.map",
     "453.acca0757.chunk.js.map": "/My-Real-PortFolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.663da2c2.css",
-    "static/js/main.accda6f9.js"
+    "static/js/main.a4a0d9c9.js"
   ]
 }
