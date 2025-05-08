@@ -2,15 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://youssef-magdy-19.github.io/My-Real-PortFolio/</loc>
-  </url>
-  <url>
-    <loc>https://youssef-magdy-19.github.io/My-Real-PortFolio/#Skills</loc>
-  </url>
-  
-  <url>
-    <loc>https://youssef-magdy-19.github.io/My-Real-PortFolio/#Projects</loc>
-  </url>
-  <url>
-    <loc>https://youssef-magdy-19.github.io/My-Real-PortFolio/#Contact</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
