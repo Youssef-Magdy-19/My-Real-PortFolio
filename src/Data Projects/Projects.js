@@ -7,6 +7,7 @@ import image7 from "../images/project5.io.png"
 import image8 from "../images/Portfolio.io.png"
 import image9 from "../images/Ecommerce1.io.png"
 import image10 from "../images/Ecommerce2.io.png"
+import image11 from "../images/Screenshot 2025-05-26 000235.png"
 import css from "../images/Css3-removebg-preview.png"
 import Bootstrap from "../images/Bootstrap-removebg-preview.png"
 import HTML from "../images/Html-removebg-preview.png"
@@ -101,6 +102,15 @@ export const Projects =[
         link:"https://youssef-magdy-19.github.io/Ecommerce-Ostora-shop/",
         category:"ReactJS",
         linkCode:"https://github.com/Youssef-Magdy-19/Ecommerce-Ostora-shop"
+    },
+    {
+        id:11,
+        title:"Admin Dashboard",
+        img:image11,
+        desc:"I designed this project by React and Material UI",
+        link:"https://youssef-magdy-admin-dashboard.netlify.app/",
+        category:"ReactJS",
+        linkCode:"https://github.com/Youssef-Magdy-19/Admin-Dashboard"
     },
 ]
 

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const ProjectCard = ({ id, title, desc, img, link, linkCode }) => {
     return (
         <motion.div 
-        className="mb-3 col-lg-4 col-md-6 col-sm-8 col-11 ps-2 pe-1"
+        className="mb-3 col-lg-4 col-md-6 col-sm-8 col-11 ps-2 pe-1 card-project"
         layout
         initial={{transform:"scale(0)"}}
         animate ={{transform:"scale(1)"}}

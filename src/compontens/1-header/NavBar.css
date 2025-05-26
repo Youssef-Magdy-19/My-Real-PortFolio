@@ -11,15 +11,17 @@
 
 
 /* *******************************  header desgin ****************************** */
+.header-parent{
+    justify-content: center;
+}
 .header{
     height: 65px;
     position: fixed;
     z-index: 10000;
     justify-content: space-around !important;
     align-items: center !important;
-    width: 93%;
+    width: 90%;
     background-color: var(--secondary);
-    margin: auto !important;
 }
 .navbar{
     background-color: var(--bgHeader);
@@ -127,15 +129,7 @@
     transform: rotate(180deg);
     font-size: 1.7rem;
 }
-@media(max-width:967px){
-    .header{
-        width: 88%;
-    }
-}
 @media(max-width:767px){
-    .header{
-        width: 88%;
-    }
     .navbar{
         display: none;
     }
@@ -147,8 +141,5 @@
     .list{
         width: 85%;
         margin-top: 40px;
-    }
-    .header{
-        width: 86% !important;
     }
 }

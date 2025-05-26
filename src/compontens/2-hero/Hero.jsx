@@ -54,10 +54,10 @@ const Hero = () => {
             <p>Hello Everyone. I'm Youssef Magdy , I'm a Software Engeneering , Front End Developer and Web Developer . I have 8 months of Experience in Web Develpoment .</p>
             <div className="icons-Hero d-flex">
                 <div>
-                  <a className="download-cv" href="https://drive.google.com/file/d/15pQJylL1HalvNJuo1XYRJraMlL4fYtc2/view?usp=drivesdk" target="_blank">View CV</a>
+                  <a className="download-cv" href="https://drive.google.com/file/d/1Rqe1Aw98kDq8W-ZCK_JIbaQ-5iPnB_RV/view?usp=drivesdk" target="_blank">View CV</a>
                 </div>
                 <ul className=" d-flex">
-                  <li><a href="https://www.linkedin.com/in/ana-youssef-48141b337/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                  <li><a href="https://www.linkedin.com/in/youssef-magdy-48141b337/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a></li>
                   <li><a href="https://github.com/Youssef-Magdy-19" target="_blank"><FontAwesomeIcon icon={faGithub}/></a></li>
                   <li><a href="https://www.facebook.com/profile.php?id=100053406365909&locale=ar_AR" target="_blank"><FontAwesomeIcon icon={faFacebook}/></a></li>
                 </ul>

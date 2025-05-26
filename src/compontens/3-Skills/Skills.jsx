@@ -6,9 +6,9 @@ const Skills=()=>{
             <div className="container-skills">
                 <h2 className="text-center mb-4">My Skills</h2>
                 <div className="skills row ">
-                    {ContantSkills.map((skill)=>{
+                    {ContantSkills.map((skill , index)=>{
                         return(
-                            <div className="space col-lg-3 col-md-4 col-6 mb-2">
+                            <div className="space col-lg-3 col-md-4 col-6 mb-2" key={index}>
                                 <div className="Skill d-flex m-auto">
                                     <div className="image-skill">
                                         <img src={skill.imgUrl} height={50} width={50} alt="" />
