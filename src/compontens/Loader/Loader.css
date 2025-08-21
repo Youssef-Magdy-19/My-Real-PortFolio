@@ -1,0 +1,11 @@
+:root{
+    --secondary : rgb(24, 24 , 27) !important;
+}
+
+.light{
+    --secondary : rgba(255,255,255,.8) !important ;
+}
+
+.loader{
+    background-color: var(--secondary) !important; 
+}

@@ -38,7 +38,7 @@ html{
 .light{
   --primary: #fff;
   --secondary : rgba(255,255,255,.8);
-  --border: rgba(63, 63 , 70 ,0.4);
+  --border: rgba(63, 63 , 70 ,0.3);
   --title: black;
   --subtitle : rgb(107, 107, 107);
 
@@ -50,7 +50,7 @@ body{
   color: var(--light) !important;
 }
 .containerr{
-  background-color: var(--secondary);
+  background-color: var(--secondary) !important;
   width: 90% !important;
   margin: auto !important;
   padding: 0px 10px;
@@ -93,4 +93,67 @@ button:disabled{
 }
 h1,h2,h3,h4,h5,h6,p,a,button{
   transition: .3s;
+}
+h1,h3,h4,h5{
+  color: var(--title) !important;
+}
+
+.scroll-container {
+  overflow-x: scroll;
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important;  /* IE 10+ */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+}
+
+.scroll-container {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+
+/* Card Hover Effect */
+.service-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Hover Effect */
+.service-icon {
+  transition: all 0.3s ease;
+}
+
+.service-card{
+  background-color: var(--secondary);
+  border: var(--border) 1px solid;
+}
+
+.service-card .service-icon{
+  background-color: rgba(0, 123, 255, 0.125) !important; /* أزرق فاتح */
+}
+
+.service-card:hover .service-icon {
+  background-color: rgba(0, 123, 255, 0.25) !important; /* أزرق فاتح */
+  transform: scale(1.1);
+}
+
+@media(max-width:767px){
+  .service-card{
+    flex-direction: column !important;
+  }
+  .service-card h5, .service-card p{
+    text-align: center;
+  }
+}
+
+@media(max-width:700px){
+  .slider{
+    height: 225px !important;
+  }
 }

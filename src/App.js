@@ -2,39 +2,34 @@
 import { useEffect } from 'react';
 import './App.css';
 import NavBar from './compontens/1-header/NavBar';
-import Hero from './compontens/2-hero/Hero';
-import Skills from './compontens/3-Skills/Skills';
-import Projects from './compontens/4-Projects/Projects';
-import Contact from './compontens/5-contact/Contact';
 import Footer from './compontens/6-footer/Footer';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home';
+import ProjectsDetails from './Pages/ProjectDetails';
+import ProjectsPage from './Pages/Projects';
+import { LoadingProvider } from './context/LoadingContext';
+import AboutMe from './Pages/About';
+
+
 function App() {
-  const scroll = () => {
-    let scroll2up = document.querySelector(".scroll2up")
-    if (window.scrollY >= 100) {
-      return scroll2up.style.opacity = "1"
-    } else {
-      scroll2up.style.opacity = "0"
-    }
-  }
-  const scrollToTop = () => {
-    window.scrollTo(0, 0)
-  }
-  window.addEventListener("scroll", scroll)
+
   return (
     <>
+    <LoadingProvider>
       <div className='row header-parent'>
         <NavBar />
       </div>
       <div className='containerr'>
-
-        <Hero />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<ProjectsPage />} />
+          <Route path='/projects/:id' element={<ProjectsDetails />} />
+          <Route path='/about' element={<AboutMe />} />
+          <Route path='*' element={<Home />} />
+        </Routes>
         <Footer />
-
-        <button className='scroll2up' onClick={() => scrollToTop()}><span className='icon-keyboard_arrow_up' /></button>
       </div>
+      </LoadingProvider>
     </>
   );
 }

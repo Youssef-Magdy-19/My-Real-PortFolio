@@ -3,58 +3,57 @@ import { Projects } from "../../Data Projects/Projects"
 import { useState } from "react"
 import ProjectCard from "./ProjectCard"
 import { AnimatePresence, motion } from "framer-motion"
+import { useNavigate } from "react-router-dom"
 
-const Products =()=>{
-    const [active , setActive] = useState("All Projects")
-    const [filter , setFilter] = useState(Projects)
-    const handleFilter=(category)=>{
-      const newFilter = Projects.filter((proj)=> proj.category === category)
-      setFilter(newFilter)
-    }
-    return(
-      <section id="Projects">
-        <div className="container-projects">
-          <div className="projects row justify-content-between">
-            <div className="filter-buttons d-flex col-md-2 col-sm-3 col-11 mb-3 p-0 m-0">
-              <button  className={active === "All Projects" ? "active " : ""}  onClick={()=>{
-                setFilter(Projects)
-                setActive("All Projects")
-                }}>All Projects</button>
-              <button  className={active === "HTML & CSS" ? "active  " : "   "} onClick={()=>{
-                handleFilter("HTML&CSS")
-                setActive("HTML & CSS")
-                }}>HTML & CSS</button>
-              <button className={active === "HTML5 & CSS3" ? "active " : ""} onClick={()=>{
-                handleFilter("HTML5&CSS3")
-                setActive("HTML5 & CSS3")
-                }}>HTML5 & CSS3</button>
-              <button  className={active === "Bootstrap" ? "active  " : "  "} onClick={()=>{
-                handleFilter("Bootstrap")
-                setActive("Bootstrap")
-                }}>Bootstrap</button>
-              <button  className={active === "JavaScript" ? "active " : ""} onClick={()=>{
-                handleFilter("JavaScript")
-                setActive("JavaScript")
-                }}>JavaScript</button>
-              <button  className={active === "React JS" ? "active  " : "  "} onClick={()=>{
-                handleFilter("ReactJS")
-                setActive("React JS")
-                }}>React JS</button>
-            </div>
-            <div className="projects-content row justify-content-around col-md-10 col-sm-9 col-12">
-              <AnimatePresence>
-                {
-                  filter.map((proj , id)=>{
-                    return(
-                      <ProjectCard key={proj.id || id} id={proj.id} title={proj.title} desc={proj.desc} img={proj.img} link={proj.link} linkCode={proj.linkCode}/>
-                    )
-                  })
-                }
-              </AnimatePresence>
-            </div>
+
+const itemVariants = {
+  hidden: { opacity: 0, scale: 0.8, y: 30 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+};
+
+const Products = () => {
+  const navigate = useNavigate()
+
+  return (
+    <section id="Projects" >
+      <div className="container-projects">
+        <motion.h2
+          variants={itemVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className="text-center" style={{ marginBottom: '30px' }}
+        >
+          Featured Projects
+        </motion.h2>
+        <div className="projects row justify-content-between">
+          <div className="projects-content row justify-content-between col-12">
+            <AnimatePresence>
+              {
+                Projects.slice(11, 17).map((proj, id) => {
+                  return (
+                    <ProjectCard key={proj.id || id} id={proj.id} title={proj.title} desc={proj.desc} img={proj.img} link={proj.link} linkCode={proj.linkCode} animation={itemVariants} />
+                  )
+                })
+              }
+            </AnimatePresence>
           </div>
         </div>
-      </section>
-    )
+        <div style={{ textAlign: 'center', width: '100%' }}>
+          <motion.button
+            variants={itemVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="btn-submit btn-projects" onClick={() => navigate('/projects')}>Show All Projects</motion.button>
+        </div>
+      </div>
+    </section>
+  )
 }
 export default Products

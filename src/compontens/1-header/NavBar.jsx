@@ -5,9 +5,11 @@ import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons"
 import { useEffect, useState } from "react"
 import { faList } from "@fortawesome/free-solid-svg-icons"
 import { faClose } from "@fortawesome/free-solid-svg-icons"
+import { Link, useLocation } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 const NavBar = () => {
-    const [active, setActive] = useState("Home")
+    const location = useLocation()
     const [model, setModel] = useState(false)
     const [theme, setTheme] = useState(localStorage.getItem("currentMode") ?? "dark")
     useEffect(() => {
@@ -34,26 +36,47 @@ const NavBar = () => {
                         {/* لو عايزين نعمل كل دول يو ال و الا و ايه مره واحده هكذا
                             ul>(li>a)*4 */}
                         <ul className="m-0 p-0 mt-3">
-                            <li><a className={active === "Home" ? "active-links text-decoration-none" : "text-decoration-none"}
-                                onClick={() => {
-                                    setModel(false)
-                                    setActive("Home")
-                                }} href="#Home" >Home</a></li>
-                            <li><a className={active === "Skills" ? "active-links text-decoration-none" : "text-decoration-none"}
-                                onClick={() => {
-                                    setModel(false)
-                                    setActive("Skills")
-                                }} href="#Skills">Skills</a></li>
-                            <li><a className={active === "Projects" ? "active-links text-decoration-none" : "text-decoration-none"}
-                                onClick={() => {
-                                    setModel(false)
-                                    setActive("Projects")
-                                }} href="#Projects">Projects</a></li>
-                            <li><a className={active === "Contact" ? "active-links text-decoration-none" : "text-decoration-none"}
-                                onClick={() => {
-                                    setModel(false)
-                                    setActive("Contact")
-                                }} href="#Contact">Contact</a></li>
+                            <li>
+                                <Link className={location.pathname === "/" || location.pathname == '' ? "active-links text-decoration-none" : "text-decoration-none"}
+                                    onClick={() => {
+                                        setModel(false)
+                                    }}
+                                    to="/"
+                                >
+                                    Home
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className={location.pathname === "/projects" ? "active-links text-decoration-none" : "text-decoration-none"}
+                                    onClick={() => {
+                                        setModel(false)
+                                    }}
+                                    to='/projects'
+                                >
+                                    Projects
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className={location.pathname === "/about" ? "active-links text-decoration-none" : "text-decoration-none"}
+                                    onClick={() => {
+                                        setModel(false)
+                                    }}
+                                    to='/about'
+                                >
+                                    About
+                                </Link>
+                            </li>
+                            
+                            <li>
+                                <HashLink smooth to="/#Contact" 
+                                className={location.pathname === "/#contact" ? "active-links text-decoration-none" : "text-decoration-none"}
+                                    onClick={() => {
+                                        setModel(false)
+                                    }}
+                                >
+                                    Contact
+                                </HashLink>
+                            </li>
                         </ul>
                     </div>
                 </div> : null
@@ -61,14 +84,35 @@ const NavBar = () => {
             <div />
             <nav className="navbar ">
                 <ul className="d-flex m-0 p-0">
-                    <li><a className={active === "Home" ? "active-links text-decoration-none ms-4 me-2" : "text-decoration-none ms-4 me-2"}
-                        onClick={() => setActive("Home")} href="#Home">Home</a></li>
-                    <li><a className={active === "Skills" ? "active-links text-decoration-none " : "text-decoration-none "}
-                        onClick={() => setActive("Skills")} href="#Skills">Skills</a></li>
-                    <li><a className={active === "Projects" ? "active-links text-decoration-none ms-2" : "text-decoration-none ms-2"}
-                        onClick={() => setActive("Projects")} href="#Projects">Projects</a></li>
-                    <li><a className={active === "Contact" ? "active-links text-decoration-none mx-2 me-4" : "text-decoration-none mx-2 me-4"}
-                        onClick={() => setActive("Contact")} href="#Contact">Contact</a></li>
+                    <li>
+                        <Link className={location.pathname === "/" || location.pathname == '' ? "active-links text-decoration-none ms-4 me-2" : "text-decoration-none ms-4 me-2"}
+                            to="/"
+                        >
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className={location.pathname === "/projects" || location.pathname === '/projects/:id' ? "active-links text-decoration-none ms-2" : "text-decoration-none ms-2"}
+                            to="/projects"
+                        >
+                            Projects
+                        </Link>
+                    </li>
+                   
+                    <li>
+                        <Link className={location.pathname === "/about" ? "active-links text-decoration-none ms-2" : "text-decoration-none ms-2"}
+                            to="/about"
+                        >
+                            about
+                        </Link>
+                    </li>
+                    <li>
+                        <HashLink smooth to="/#Contact"
+                            className={location.pathname === "/#Contact" ? "active-links text-decoration-none mx-2 me-4" : "text-decoration-none mx-2 me-4"}
+                        >
+                            Contact
+                        </HashLink>
+                    </li>
                 </ul>
             </nav>
             <div className="icon-moon-or-sun">
