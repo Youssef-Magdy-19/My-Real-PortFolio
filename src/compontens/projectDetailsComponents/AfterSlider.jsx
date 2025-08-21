@@ -31,10 +31,11 @@ const AfterSlider = ({ images, activeImage, setActiveImage }) => {
 
 
     const imageVariants = {
-        hidden: { opacity: 0, scale: 0.95 },
-        visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-        exit: { opacity: 0, scale: 1.05, transition: { duration: 0.3 } },
+        hidden: { opacity: 0, scale: 0.95, zIndex: 0 },
+        visible: { opacity: 1, scale: 1, zIndex: 1, transition: { duration: 0.6 } },
+        exit: { opacity: 0, scale: 1.05, zIndex: 0, transition: { duration: 0.6 } },
     };
+
     const nextImage = () => setActiveImage((prev) => (prev + 1) % images.length);
     const prevImage = () => setActiveImage((prev) => (prev - 1 + images.length) % images.length);
     const scroll = (direction) => {
@@ -59,10 +60,13 @@ const AfterSlider = ({ images, activeImage, setActiveImage }) => {
             >
                 <AnimatePresence mode="wait">
                     <motion.div
+                        key={activeImage}
                         variants={imageVariants}
                         initial="hidden"
                         animate="visible"
                         exit="exit"
+                        transition={{ duration: 0.6 }}   // ✅ حط transition هنا عشان يفضل ماشي مع exit
+                        className="position-absolute top-0 start-0" // ✅ خلي الموشن نفسه absolute
                         drag="x"
                         dragConstraints={{ left: 0, right: 0 }}
                         onDragEnd={(e, info) => {
@@ -71,30 +75,27 @@ const AfterSlider = ({ images, activeImage, setActiveImage }) => {
                         }}
                     >
                         <LazyLoadImage
-                            key={activeImage}
                             src={images[activeImage]}
-                            style={{ objectFit: "contain" }}
                             alt="Project"
-                            className="position-absolute top-0 start-0 w-100 h-100 rounded"
-                            loading="lazy"
-                            effect="blur"
+                            effect="blur"         
+                            style={{ objectFit: "contain" }}
+                            className="w-100 h-100 rounded"
                         />
                     </motion.div>
-
                 </AnimatePresence>
 
                 {/* أزرار التنقل */}
                 <button
                     onClick={prevImage}
                     className="position-absolute top-50 start-0 translate-middle-y bg-dark bg-opacity-50 text-white rounded-circle border-0"
-                    style={{ padding: "10px" }}
+                    style={{ padding: "10px", zIndex:'100' }}
                 >
                     <ChevronLeft size={28} />
                 </button>
                 <button
                     onClick={nextImage}
                     className="position-absolute top-50 end-0 translate-middle-y bg-dark bg-opacity-50 text-white rounded-circle border-0"
-                    style={{ padding: "10px" }}
+                    style={{ padding: "10px", zIndex:'100' }}
                 >
                     <ChevronRight size={28} />
                 </button>
@@ -110,15 +111,6 @@ const AfterSlider = ({ images, activeImage, setActiveImage }) => {
                     {activeImage + 1} / {images.length}
                 </motion.div>
 
-                {/* زر تكبير */}
-                {/* <motion.button
-                    onClick={() => setIsZoomOpen(true)}
-                    className="position-absolute top-0 end-0 bg-dark bg-opacity-50 text-white rounded-circle border-0"
-                    style={{ padding: "7px", margin: "15px" }}
-                    whileHover={{ scale: 1.1 }}
-                >
-                    <Maximize2 size={22} />
-                </motion.button> */}
             </motion.div>
 
             {/* ✅ الصور المصغرة */}

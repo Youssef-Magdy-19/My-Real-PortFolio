@@ -34,6 +34,8 @@ html{
 
   --bgHeader:rgb(39,39,42);
   --blue: #5dbcfc;
+
+  --bg-button: rgb(36,37, 46);
 }
 .light{
   --primary: #fff;
@@ -43,7 +45,9 @@ html{
   --subtitle : rgb(107, 107, 107);
 
   --bgHeader:rgb(240,240,240);
-  --blue:rgb(93,188,252)
+  --blue:rgb(93,188,252);
+
+  --bg-button: rgba(36, 37, 46, 0.45);
 }
 body{
   background-color: var(--primary);

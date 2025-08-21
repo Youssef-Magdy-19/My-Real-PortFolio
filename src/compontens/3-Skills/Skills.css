@@ -16,8 +16,11 @@ h2{
 .image-skill{
     border-radius: 5px !important;
     background-color:rgb(36, 37, 46);
-    width:  50px !important;
-    height: 50px !important;
+    width:  55px !important;
+    height: 55px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 5px;
     border: 1px solid rgba(93,188,252,.3);
     transition: .3s;

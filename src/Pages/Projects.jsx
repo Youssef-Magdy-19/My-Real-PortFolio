@@ -105,7 +105,7 @@ const ProjectsPage = () => {
                 handleFilter("Bootstrap")
                 setActive("Bootstrap")
               }}>
-              Bootstrap
+              UI Frameworks
             </motion.button>
 
             <motion.button

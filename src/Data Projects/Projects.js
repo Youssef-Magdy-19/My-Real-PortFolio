@@ -165,7 +165,7 @@ import Git from "../images/Git-removebg-preview .png"
 import GitHub from "../images/GitHub.png"
 import typeScript from "../images/typescript-removebg-preview.png"
 import mui from "../images/mui-removebg-preview.png"
-import next from "../images/GitHub.png"
+import next from "../images/next.png"
 import tailwind from "../images/download-removebg-preview.png"
 
 // ----------------------------------------------------------------------

@@ -38,8 +38,8 @@ const Skills = () => {
                                         <LazyLoadImage
                                             loading="lazy"
                                             src={skill.imgUrl}
-                                            height={50}
-                                            width={50} alt="Skill"
+                                            height={47.5}
+                                            width={47.5} alt="Skill"
                                             effect="blur"
                                         />
                                     </div>

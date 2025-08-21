@@ -20,9 +20,9 @@ const ProjectCard = ({ id, title, desc, img, link, linkCode, animation }) => {
                     <LazyLoadImage
                         loading="lazy"
                         src={img}
-                        height={150}
-                        className="project-image-card w-100"
                         effect="blur"
+                        className="project-image-card"
+                        wrapperClassName="project-image-card-wrapper"
                     />
                 </Link>
                 <div className="project-info d-flex justify-content-between pt-2" style={{ flexDirection: 'column' }}>
