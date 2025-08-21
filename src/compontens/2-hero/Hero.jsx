@@ -22,7 +22,7 @@ const Hero = () => {
     }, delta)
 
     return () => { clearInterval(tricker) }
-  }, [text])
+  }, [text, delta])
   const trick = () => {
     let i = loopNum % toRotate.length
     let fullText = toRotate[i]
@@ -62,7 +62,7 @@ const Hero = () => {
             <p>Hello Everyone. I'm Youssef Magdy , I'm a Software Engeneering , Front End Developer and Web Developer . I have 1 year of Experience in Web Develpoment .</p>
             <div className="icons-Hero d-flex">
               <div>
-                <a className="download-cv" href="https://drive.google.com/file/d/1gDYC14Eii5IUEHHcDzvefO58eILGcBUQ/view?usp=drivesdk" target="_blank">View CV</a>
+                <a className="download-cv" href="https://drive.google.com/file/d/1gDYC14Eii5IUEHHcDzvefO58eILGcBUQ/view?usp=drivesdk" target="_blank" rel="noreferrer">View CV</a>
               </div>
               <ul className=" d-flex">
                 <li><a href="https://www.linkedin.com/in/youssef-magdy-48141b337/" target="_blank"><FontAwesomeIcon icon={faLinkedin} /></a></li>

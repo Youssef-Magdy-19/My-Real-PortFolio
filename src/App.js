@@ -1,5 +1,3 @@
-
-import { useEffect } from 'react';
 import './App.css';
 import NavBar from './compontens/1-header/NavBar';
 import Footer from './compontens/6-footer/Footer';

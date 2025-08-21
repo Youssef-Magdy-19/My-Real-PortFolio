@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import useWindowScrollToTop from "../hooks/useWindowScrollToTop"
 import { useParams } from "react-router-dom";
 import { Projects } from "Data Projects/Projects";
 import AfterSlider from "../compontens/projectDetailsComponents/AfterSlider";
@@ -12,7 +11,6 @@ const ProjectsDetails = () => {
     const { id } = useParams()
     const [projectData, setProjectData] = useState(null);
     const [activeImage, setActiveImage] = useState(0);
-    const [isZoomOpen, setIsZoomOpen] = useState(false);
     const [relatedProjects, setRelatedProjects] = useState([])
     const { setIsLoading } = useLoading();
 
@@ -26,12 +24,12 @@ const ProjectsDetails = () => {
         setIsLoading(true);
         const timer = setTimeout(() => setIsLoading(false), 1200);
         return () => clearTimeout(timer);
-    }, []);
+    }, [setIsLoading]);
 
     // البحث عن المشروع عند تغيير ID
     useEffect(() => {
         const foundProject = Projects.find((item) => item.id === parseInt(id));
-        let foundRelatedProjects = Projects.filter(project => project.category == foundProject.category)
+        let foundRelatedProjects = Projects.filter(project => project.category === foundProject.category)
         foundRelatedProjects = foundRelatedProjects.filter(project => project !== foundProject)
         console.log(foundRelatedProjects)
         setRelatedProjects(foundRelatedProjects)
@@ -67,7 +65,6 @@ const ProjectsDetails = () => {
                     images={images}
                     activeImage={activeImage}
                     setActiveImage={setActiveImage}
-                    setIsZoomOpen={setIsZoomOpen}
                 />
             </div>
             <div className="project-contect ms-3 mt-5">

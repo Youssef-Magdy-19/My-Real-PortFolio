@@ -1,6 +1,5 @@
 import "./Projects.css"
 import { Projects } from "../../Data Projects/Projects"
-import { useState } from "react"
 import ProjectCard from "./ProjectCard"
 import { AnimatePresence, motion } from "framer-motion"
 import { useNavigate } from "react-router-dom"

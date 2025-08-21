@@ -1,10 +1,10 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react';
-import React, { useEffect, useRef, useState } from 'react'
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-const AfterSlider = ({ images, activeImage, setActiveImage, setIsZoomOpen }) => {
+const AfterSlider = ({ images, activeImage, setActiveImage }) => {
     const scrollRef = useRef(null);
     const containerRef = useRef(null);
     const [canScroll, setCanScroll] = useState(false);

@@ -30,8 +30,8 @@ const ProjectCard = ({ id, title, desc, img, link, linkCode, animation }) => {
                     <p>{desc.slice(0, 66)} ...</p>
                     <div className="visit-icons d-flex gap-1 align-items-center justify-content-between">
                         <div className="icon-proj mb-1">
-                            <a href={link} target="_blank"><span className="icon-link me-2" /></a>
-                            <a href={linkCode} target="_blank"><FontAwesomeIcon icon={faGithub} /></a>
+                            <a href={link} target="_blank" rel="noreferrer"><span className="icon-link me-2" /></a>
+                            <a href={linkCode} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
                         </div>
                         <Link to={`/projects/${id}`} style={{ textDecoration: 'none', paddingRight: '5px' }}>Project Details <ArrowRight width={15} height={15} /></Link>
                     </div>

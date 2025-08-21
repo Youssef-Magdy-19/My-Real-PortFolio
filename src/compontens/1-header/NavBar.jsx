@@ -1,7 +1,7 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./NavBar.css"
-import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons"
+import { faMoon } from "@fortawesome/free-regular-svg-icons"
 import { useEffect, useState } from "react"
 import { faList } from "@fortawesome/free-solid-svg-icons"
 import { faClose } from "@fortawesome/free-solid-svg-icons"
@@ -13,7 +13,7 @@ const NavBar = () => {
     const [model, setModel] = useState(false)
     const [theme, setTheme] = useState(localStorage.getItem("currentMode") ?? "dark")
     useEffect(() => {
-        if (theme != "dark") {
+        if (theme !== "dark") {
             document.body.classList.remove("dark")
             document.body.classList.add("light")
         } else {
@@ -37,7 +37,7 @@ const NavBar = () => {
                             ul>(li>a)*4 */}
                         <ul className="m-0 p-0 mt-3">
                             <li>
-                                <Link className={location.pathname === "/" || location.pathname == '' ? "active-links text-decoration-none" : "text-decoration-none"}
+                                <Link className={location.pathname === "/" ? "active-links text-decoration-none" : "text-decoration-none"}
                                     onClick={() => {
                                         setModel(false)
                                     }}
@@ -85,7 +85,7 @@ const NavBar = () => {
             <nav className="navbar ">
                 <ul className="d-flex m-0 p-0">
                     <li>
-                        <Link className={location.pathname === "/" || location.pathname == '' ? "active-links text-decoration-none ms-4 me-2" : "text-decoration-none ms-4 me-2"}
+                        <Link className={location.pathname === "/" ? "active-links text-decoration-none ms-4 me-2" : "text-decoration-none ms-4 me-2"}
                             to="/"
                         >
                             Home

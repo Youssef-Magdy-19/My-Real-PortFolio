@@ -1,5 +1,4 @@
 import ProjectCard from "compontens/4-Projects/ProjectCard";
-import { h3 } from "fontawesome";
 import { AnimatePresence, motion } from "framer-motion";
 
 const itemVariants = {
