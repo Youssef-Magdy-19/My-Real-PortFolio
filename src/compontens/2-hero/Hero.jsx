@@ -58,8 +58,8 @@ const Hero = () => {
               />
               <span className="icon-verified ms-1" />
             </div>
-            <h1>{"Hi! I'm Youssef Magdy Mohmmed,"} <span>{text}</span></h1>
-            <p>Hello Everyone. I'm Youssef Magdy , I'm a Software Engeneering , Front End Developer and Web Developer . I have 1 year of Experience in Web Develpoment .</p>
+            <h1>{"Hi! I'm Youssef Magdy Mohmmed,"} {text}</h1>
+            <p>Hello Everyone. I'm Youssef Magdy , I'm a Software Engeneering , Front End Developer, Back End, Full Stack, and Web Developer . I have 1 year of Experience in Web Develpoment .</p>
             <div className="icons-Hero d-flex">
               <div>
                 <a className="download-cv" href="https://drive.google.com/file/d/1gDYC14Eii5IUEHHcDzvefO58eILGcBUQ/view?usp=drivesdk" target="_blank" rel="noreferrer">View CV</a>

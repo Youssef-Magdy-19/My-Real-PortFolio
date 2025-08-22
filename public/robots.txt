@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://youssef-magdy-19.github.io/My-Real-PortFolio/sitemap.xml 
+Sitemap: https://yousef-magdy-portfolio.netlify.app/sitemap.xml 

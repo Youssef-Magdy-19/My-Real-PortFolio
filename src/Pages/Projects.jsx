@@ -5,6 +5,7 @@ import ProjectCard from "../compontens/4-Projects/ProjectCard"
 import { AnimatePresence, motion } from "framer-motion"
 import useWindowScrollToTop from "../hooks/useWindowScrollToTop"
 import Loader from "../compontens/Loader/Loader"
+import { Helmet } from "react-helmet-async"
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -44,15 +45,27 @@ const ProjectsPage = () => {
       transition={{ duration: 1 }}
       style={{ paddingTop: '60px', minHeight: '100vh' }}
     >
-      <div className='container-projects' style={{padding:'25px 0'}}>
+      <Helmet>
+        <title>Youssef Magdy | Projects - Full Stack Developer & Web Designer</title>
+        <meta
+          name="description"
+          content="Explore the projects of Youssef Magdy, a Full Stack Developer & Web Designer. Filter projects by Frontend, Backend, and Web Design to see real examples of React.js, Node.js, and modern responsive websites."
+        />
+      </Helmet>
+
+      <div className='container-projects' style={{ padding: '25px 0' }}>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="title text-center"
         >
-          <h1 className='project-title text-4xl md:text-5xl font-bold mb-[15px]' style={{marginBottom:'15px'}}>Projects</h1>
-          <p className='text-md md:text-base text-gray-500 mb-[30px]' style={{marginBottom:'30px'}}>Explore a selection of outstanding projects we have completed for our clients, with the option to filter by the type of project you are looking for.</p>
+          <h1 className='project-title text-4xl md:text-5xl font-bold mb-[15px]' style={{ marginBottom: '15px' }}>My Projects</h1>
+          <p className='text-md md:text-base text-gray-500 mb-[30px]' style={{ marginBottom: '30px' }}>
+            Explore the projects of Youssef Magdy, a Front End & Full Stack Developer & Web Designer.
+            Browse and filter projects by Frontend, Backend, and Web Design to see real examples
+            built with React.js, Node.js, and modern responsive techniques.
+          </p>
         </motion.div>
 
         <div className="projects row justify-content-between">
