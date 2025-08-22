@@ -165,6 +165,6 @@ h1,h3,h4,h5{
 
 @media(max-width:700px){
   .slider{
-    height: 225px !important;
+    height: 140px !important;
   }
 }
