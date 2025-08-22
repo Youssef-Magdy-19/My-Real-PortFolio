@@ -72,7 +72,7 @@ export default function AboutMe() {
                     viewport={{ once: true, amount: 0.3 }}
                     className="mt-3 d-flex gap-1"
                 >
-                    <h4 style={{ marginLeft: '3.5px' }}>📌</h4>
+                    <h4 className="lamp-icon" style={{ marginLeft: '3.5px' }}>📌</h4>
                     <p>
                         Hi, I’m <strong>Youssef Magdy</strong>, a 20-year-old student at the Faculty of
                         Engineering, Al-Azhar University, majoring in Computer Systems &
@@ -87,7 +87,7 @@ export default function AboutMe() {
                     viewport={{ once: true, amount: 0.3 }}
                     className="d-flex gap-1"
                 >
-                    <h4 style={{ marginLeft: '5.5px', marginRight: '5.5px' }}>💡</h4>
+                    <h4 className="lamp-icon" style={{ marginLeft: '5.5px', marginRight: '5.5px' }}>💡</h4>
                     <p>
                         I discovered my passion for programming even before joining
                         university, as I’ve always loved problem-solving and logical thinking.

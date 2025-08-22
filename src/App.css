@@ -147,6 +147,13 @@ h1,h3,h4,h5{
   transform: scale(1.1);
 }
 
+@media(max-width:967px){
+  .lamp-icon{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
 @media(max-width:767px){
   .service-card{
     flex-direction: column !important;
