@@ -7,6 +7,7 @@ import ProjectsDetails from './Pages/ProjectDetails';
 import ProjectsPage from './Pages/Projects';
 import { LoadingProvider } from './context/LoadingContext';
 import AboutMe from './Pages/About';
+import PrivateRepo from './Pages/PrivateRepo';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/projects' element={<ProjectsPage />} />
           <Route path='/projects/:id' element={<ProjectsDetails />} />
           <Route path='/about' element={<AboutMe />} />
+          <Route path="/private-repo" element={<PrivateRepo />} />
           <Route path='*' element={<Home />} />
         </Routes>
         <Footer />

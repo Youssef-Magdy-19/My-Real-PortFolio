@@ -34,7 +34,7 @@ const Products = () => {
           <div className="projects-content row justify-content-between col-12">
             <AnimatePresence>
               {
-                Projects.slice(11, 17).map((proj, id) => {
+                Projects.slice(19, 25).map((proj, id) => {
                   return (
                     <ProjectCard key={proj.id || id} id={proj.id} title={proj.title} desc={proj.desc} img={proj.img} link={proj.link} linkCode={proj.linkCode} animation={itemVariants} />
                   )

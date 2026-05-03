@@ -147,6 +147,25 @@ h1,h3,h4,h5{
   transform: scale(1.1);
 }
 
+.color{
+  color: var(--bgHeader) !important;
+}
+
+/* حل سريع يخليك تستخدمها زي تيلوند */
+.line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
 @media(max-width:967px){
   .lamp-icon{
     margin-left: 0 !important;
